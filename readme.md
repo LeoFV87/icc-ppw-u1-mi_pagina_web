@@ -79,7 +79,6 @@ icc-ppw-u1-mi_pagina_web/
 └── README.md
 ```
 
- * CAMBIAR SEGUN SU ESTRUCTURA
 
 ---
 
@@ -90,47 +89,52 @@ Los nuevos archivos se enlazaron dentro del documento `index.html` de la siguien
 **En el `<head>` (para el CSS):**
 
 ```html
-COMLETAR
+<link rel="stylesheet" href="style.css">
 ```
 
 **Antes de cerrar el `<body>` (para el JavaScript):**
 
 ```html
-COMLETAR
+<script src="script.js"></script>
 ```
 
 ---
 
 ### 3. Estilos aplicados con CSS
 
-* COMLETAR LA TABLA
-
 | Elemento                    | Estilo implementado                                            | Descripción                             |
 | --------------------------- | -------------------------------------------------------------- | --------------------------------------- |
-| `body`                      |         |         |
-| `header`                    | |
-| `table`                     |                              |                  |
-| `button`                    |                                   |   |
-| `section`                   |                                        |          |
-| `progress`                  | `accent-color: #007bff; width: 100%;`                          | Personalización de la barra de progreso |
+| `body`                      | `background-color: #f1f1f1; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;` | Da color al fondo, defino el tipo de letra, etc |
+| `header`                    | `background-color: #e6d32d;color: #000000;text-align: center;padding: 30px 20px;`   | Es el encabezado, asigno un color al fondo, a la letra, su alineación|
+| `h2`                        | `color: #000000;border-bottom: 3px solid #800d00;padding-bottom: 15px;`                          | Personalización de titulo h2 |
+| `table`                     | `border-collapse: collapse;width: 100%;`                         | Une bien los bordes de la tabla y le ajusta su tamaño horizontal |
+| `th, td`                    | `border: 1px solid #dddddd;padding: 12px;text-align: left;`                          | Define como seran las celdas de las tablas y las estiliza |
+| `button`                    | `background-color: #3498db;color: white;border-radius: 5px;cursor: pointer;padding: 10px 20px;border: none;font-size: 16px;`|  Da más vida al botón cambiando su color, de su texto, etc |
+| `section`                   | `margin: 25px;padding: 20px;border-radius: 8px;box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);`  | Coloca de mejor manera el contenido general de la pagina  |
+| `img`                       | `max-width: 100%;height: auto;border-radius: 8px;box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);margin: 15px 0;display: block;`                          | Agrego mas detalles a la imagen ingresada con figure |
+| `footer`                    | `background-color: #e6d32d;color: #000000;text-align: center;padding: 20px;margin-top: 40px;border-top: 4px solid #800d00;`                          | Personaliza el pie de pagina |
+
 
 
 **Ejemplo en el código:**
 
-AGREGAR DOS EJEMPLOS DE SU CODIGO CSS
-
 ```css
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    display: block;
 }
 
-button:hover {
-  background-color: #0056b3;
+footer {
+    background-color: #e6d32d;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #800d00;
 }
 ```
 
@@ -162,10 +166,24 @@ El archivo `script.js` incorpora dos acciones básicas:
    });
    ```
 
+3. **Dar un mensaje de ALERTA al presionar un botón**
+   
+ ```javascript
+   const botonAlerta = document.getElementById("mostrarAlerta");
+
+   if (botonAlerta) {
+    botonAlerta.addEventListener("click", () => {
+        alert("ALERTA! ALERTA!");
+    });
+   } else {
+    console.error("Error: No se encontró el botón con ID 'mostrarAlerta'.");
+   }
+   ```
+   
+
 
 ## Capturas de pantalla del proyecto final
 
-* Agregar su captura de pantalla del proyecto final funcionando en el navegador, de ambas versiones (sin y con CSS/JS)
 
-![alt text](<Captura de pantalla 2025-10-14 a la(s) 3.35.33 p. m..png>)
+![alt text](<antesydespuesImagen.jpeg>)
 
