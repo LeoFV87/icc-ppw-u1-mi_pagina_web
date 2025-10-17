@@ -30,17 +30,29 @@
 
 | Etiqueta | Descripción | Implementación |
 |-----------|--------------|----------------|
-| `<figure>` | Contenedor para imagen con pie de foto | Logo HTML5 con `<figcaption>` |
-| `<progress>` | Barra de progreso de una tarea | Representa 70% completado |
+| `<figure>` | Contenedor para insertar imagenes a traves de enlaces | Logo de la UPS con `<figcaption>` |
+| `<aside>` | Seccion con contenido secuendario | Ingreso información del contexto academico del trabajo |
 
 **Código usado:**
 ```html
-<figure>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML5">
-  <figcaption>Logo de HTML5</figcaption>
-</figure>
+<h2>Etiquetas nuevas exploradas</h2>
+            <p>Estas son dos etiquetas que aprendí de la tabla periódica HTML5:</p>
 
-<progress value="70" max="100">70%</progress>
+            <h3>Ejemplo Figure</h3>
+            <figure>
+                <img
+                    src="https://c0.klipartz.com/pngpicture/21/61/gratis-png-universidad-politecnica-salesiana-educacion-superior-universidad-don-bosco-campus-de-estudios-de-posgrado.png"
+                    alt="Logo de la UPS"
+                    width="100"
+                >
+                <figcaption>Logo de la Universidad politecnica Salesiana</figcaption>
+            </figure>
+
+            <h3>Ejemplo Aside</h3>
+            <aside>
+                <h4>Contexto Académico</h4>
+                <p>Trabajo para la materia Programación y Plataformas Web (Ing. Ciencias de la Computación, UPS).</p>
+            </aside>
 ```
 
 
